@@ -1,0 +1,278 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 400;
+}
+.nav-itens{
+    list-style: none;
+    display: flex;
+    margin-top: 15px;
+
+}
+.nav-itens>li>a {
+    padding-left: 30px;
+    color: #fff;
+    text-decoration: none;
+
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0DA0C0;
+    height: 40px;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+}
+
+section.top > img {
+  height: 50px;
+  margin: 0 auto 50px;
+}
+
+section {
+  position: relative;
+  margin: 0 30px;
+}
+
+section.top {
+  display: grid;
+  border-bottom: 2px solid rgb(255 255 255 / 20%);
+  padding-bottom: 20px;
+}
+
+section.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 8px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+section p {
+  margin: 0;
+  color: #fff;
+
+}
+
+.legal > a {
+  margin: 0 0 0 4px;
+  font-family: 'Poppins' , sans-serif;
+
+}
+
+.legal,
+.copyright {
+  font-size: 12px;
+}
+
+.legal > span {
+  margin-right: 10px;
+}
+
+
+.socials-column :is(h2, p) {
+  display: none;
+      font-family: 'Poppins' , sans-serif;
+
+}
+
+@media (width > 400px) {
+  .links-column {
+    text-align: left;
+  }
+
+  section.top .links {
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 50px;
+  }
+
+  section.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+  }
+
+  section.top .socials {
+    left: 0;
+    translate: 0;
+  }
+
+  section.top > img {
+    margin: 0 0 50px;
+  }
+}
+
+@media (width >= 640px) {
+  section {
+    margin: 0 auto;
+    max-width: 580px;
+    padding: 0;
+  }
+
+  section.top .links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section.top .socials {
+    position: static;
+  }
+
+  section.bottom {
+    justify-content: flex-start;
+  }
+
+  .socials-column :is(h2, p) {
+    display: block;
+  }
+}
+
+ /* pagina de registro */
+
+.form {
+    top: 100px;
+    position: relative;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+    width: 800px;
+    height: 720px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(91, 214, 240);
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #0DA0C0;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #0DA0C0;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #0DA0C0;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+input{
+    background-color: #eee;
+    margin: none;
+}
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #eee;
+}
+
+.input-box input::placeholder {
+    color: #333;
+}
+
+.continue-button button {
+
+    width: 100%;
+    border: none;
+    background-color: #0DA0C0;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #25c9ee;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+}
+
+#endereco{
+width: 150px;
+}

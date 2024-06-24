@@ -1,0 +1,36 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 400;
+}
+.nav-itens{
+    list-style: none;
+    display: flex;
+    margin-top: 15px;
+
+}
+.nav-itens>li>a {
+    padding-left: 30px;
+    color: #fff;
+    text-decoration: none;
+
+}
+.card {
+
+    left: 35%;
+    top: 22px;
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0DA0C0;
+    height: 40px;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+}
